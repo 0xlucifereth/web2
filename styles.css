@@ -1,0 +1,153 @@
+/* 控制顶部轮播图的尺寸 */
+.top-carousel .carousel-item img {
+    width: 100%;
+    height: 300px; /* 将高度从400px减小到300px */
+    object-fit: cover; /* 确保图片填满容器并保持比例 */
+    filter: grayscale(30%);
+}
+
+/* 控制产品轮播图的尺寸 */
+#productCarousel .carousel-item img {
+    width: 100%;
+    height: 200px; /* 设置一个较小的高度 */
+    object-fit: cover;
+}
+
+/* 调整轮播图标题和描述的样式，使其更适合较小的图片 */
+.carousel-caption {
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5); /* 半透明背景 */
+    border-radius: 5px;
+}
+
+.carousel-caption h2 {
+    font-size: 1.5rem; /* 减小标题字体大小 */
+}
+
+.carousel-caption p {
+    font-size: 0.9rem; /* 减小描述文字字体大小 */
+}
+
+.carousel-caption .btn {
+    font-size: 0.8rem; /* 减小按钮字体大小 */
+    padding: 0.25rem 0.5rem; /* 减小按钮内边距 */
+}
+
+/* 新增产品轮播图的背景图片样式 */
+#productCarousel .product-image {
+    width: 100%;
+    height: 300px; /* 可以根据需要调整高度 */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+#productCarousel .carousel-caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 80%;
+    background-color: rgba(0, 0, 0, 0.7); /* 半透明黑色背景 */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#productCarousel .carousel-caption h5 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+#productCarousel .carousel-caption p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+#productCarousel .carousel-caption .btn {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+}
+
+/* 添加页脚样式 */
+.footer {
+    background-color: #34495e; /* 浅灰色背景 */
+    color: #ecf0f1; /* 深灰色文字 */
+    padding: 20px 0;
+}
+
+.footer .nav-link,
+.footer .social-icon {
+    color: #bdc3c7; /* 深灰色链接 */
+}
+
+.footer .nav-link:hover,
+.footer .social-icon:hover {
+    color: #3498db; /* 鼠标悬停时颜色变深 */
+}
+
+/* 在文件末尾添加以下样式 */
+.social-icon {
+    font-size: 1.2rem;
+    margin: 0 10px;
+    color: #6c757d;
+    text-decoration: none;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: translateY(-3px);
+    color: #3498db;
+}
+
+.xiaohongshu {
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+/* 新增微信图标样式 */
+.wechat-icon {
+    position: relative;
+    display: inline-block;
+}
+
+.wechat-qr {
+    display: none;
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 150px;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+.wechat-icon:hover .wechat-qr {
+    display: block;
+}
+
+/* 抖音图标样式 */
+.tiktok-icon {
+    position: relative;
+    display: inline-block;
+}
+
+.tiktok-qr {
+    display: none;
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 150px;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+.tiktok-icon:hover .tiktok-qr {
+    display: block;
+}
